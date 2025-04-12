@@ -1,4 +1,3 @@
-![Screenshot (36)](https://github.com/user-attachments/assets/348bb975-f8fa-4437-a687-3a9413beb7c5)
 # 📚 TMA - Textbook Management Application (Frontend)
 
 This is the frontend of the **Textbook Management Application** built using Angular. It allows instructors and employees to manage textbooks, inventory, and course-related resources.
@@ -42,3 +41,6 @@ npm install
 
 # 4. Run the Angular app
 ng serve
+
+
+![Screenshot (36)](https://github.com/user-attachments/assets/348bb975-f8fa-4437-a687-3a9413beb7c5)
