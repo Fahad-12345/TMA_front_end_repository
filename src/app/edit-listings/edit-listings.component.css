@@ -1,0 +1,85 @@
+.button-container {
+    height: 690px;
+    width: 1420px;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('https://images.unsplash.com/photo-1558572687-df2e1e142ea3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+.button-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .button-section button {
+    padding: 10px 20px;
+    background-color: #ff5e00;
+    color: #ece7e7;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(222, 82, 82, 0.1);
+    transition: background-color 0.2s ease;
+  }
+  
+  .button-section button:hover {
+    background-color: #b6c9dc;
+  }
+  
+  .button-section button:active {
+    background-color: #a3bcd9;
+  }
+  
+  .button-section button:focus {
+    outline: none;
+  }
+  .success-message {
+    color: green;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  .patient{
+    
+    transform: scale(0.9);
+  } 
+  .case{
+    transform: scale(0.9);
+  }
+  .appointment{
+    transform: scale(0.9);
+  }
+  form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  /* Style the form inputs */
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #d61212;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  
+  

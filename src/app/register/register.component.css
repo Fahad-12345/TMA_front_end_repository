@@ -1,0 +1,47 @@
+/* register.component.css */
+
+.container {
+    height: 690px;
+    width: 3000px;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210316/pngtree-simple-light-blue-shade-background-image_586910.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  h2 {
+    text-align: center;
+    color: rgb(219, 231, 220);
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    color:rgb(255, 0, 255);
+  }
+  
+  label {
+    font-weight: bold;
+    color-scheme:calc();
+    
+  }
+  
+  .btn-primary {
+    width: 20%;
+  }
+  
+  .error {
+    color: rgb(235, 226, 226);
+    text-align: center;
+    margin-top: 10px;
+  }
+  .success{
+    color:rgb(234, 236, 235);
+    text-align: center;
+    margin-top: 10px;
+  }

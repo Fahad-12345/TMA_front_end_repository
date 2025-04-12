@@ -1,0 +1,66 @@
+/* Apply styles to the form container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 5px; /* Set a fixed width for the form container */
+  justify-content: flex-start; /* Align the form container to the left */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: right;
+  /* Align the labels to the right */
+}
+
+/* Style form inputs */
+input,
+select {
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid #d2c2c2;
+  border-radius: 4px;
+  font-size: 16px;
+  transform: scale(0.8);
+}
+
+/* Apply styles to the submit button */
+button[type="submit"] {
+  background-color: #ffbf00;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style success and error messages */
+.success-message,
+.error-message {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.success-message {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.error-message {
+  background-color: #dc3545;
+  color: #fff;
+}
+/* Apply flexbox properties to center the form container */
+.container {
+  /* ... Other styles ... */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  margin-top: 20px; /* Add spacing between the button and the form */
+}

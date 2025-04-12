@@ -1,0 +1,202 @@
+.page-container {
+  height: 1000px;
+  width: 1420px;
+  margin: 0;
+  padding: 0;
+  /* background-image: url("https://images.unsplash.com/photo-1558572687-df2e1e142ea3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.form-group {
+  transform: scale(0.8);
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button.btn-primary {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(39, 12, 12, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+button.btn-primary:active {
+  background-color: #00438f;
+}
+
+button.btn-primary:focus {
+  outline: none;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pagination-container label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.pagination-container input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #130101;
+  border-radius: 5px;
+  /* Add background and text color */
+  background-color: #58bf13; /* Light gray */
+  color: #333; /* Dark gray */
+  /* Add box-shadow on focus */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-container input[type="number"]:focus {
+  /* Update the border color on focus */
+  border-color: #ecf0f5; /* Blue on focus */
+}
+
+/* Add some styling to the label to make it more colorful */
+
+.pagination-container label {
+  /* Choose a color for the label text */
+  color: #92448d; /* Blue */
+}
+
+/* Add some styles to the pagination buttons */
+
+.pagination-container button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.button-container button:active {
+  background-color: #00438f;
+}
+
+.button-container button:focus {
+  outline: none;
+}
+
+.compact-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  transform: scale(0.8);
+  align-content: flex-start;
+}
+
+.compact-table th,
+.compact-table td {
+  padding: 7px 7px; /* Increase the padding for better spacing */
+  border: 1px solid #1010ff; /* Add a border to the cells */
+  text-align: left;
+  background-color: #13a5bf64;
+}
+
+.compact-table th {
+  background-color: #9ba89c; /* Add a light gray background to the header cells */
+}
+
+/* Add hover effect to table rows */
+.compact-table tr:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+/* Hide specific columns on smaller screens (less than 768px) */
+@media (max-width: 768px) {
+  .compact-table td:nth-child(16), /* Hide the 13th column (Edit) */
+  .compact-table td:nth-child(17) /* Hide the 14th column (Delete) */ {
+    display: none;
+  }
+}
+button.btn-secondary {
+  padding: 10px 20px;
+  background-color: #175bc1; /* Blue */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(214, 217, 210, 0.644);
+  transition: background-color 0.2s ease;
+}
+
+.not-allowed-symbol {
+  display: inline-block;
+  font-size: 24px;
+  color: red;
+}
+.btn-heading {
+  font-size: 24px;
+  color: #3f1efc;
+  align-items: center;
+}
+
+.form-control.select-dropdown {
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Standard */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='none' stroke='%23343a40' d='M0 0l2 2 2-2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px; /* Space for the arrow */
+}

@@ -1,0 +1,60 @@
+
+  .container {
+    height: 690px;
+    width: 3000px;
+    margin: 0;
+    padding: 0;
+    /* /* background-image: url('');  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* .container {
+    height: 100%;
+   
+    background-image: url('https://img.freepik.com/free-photo/hands-unrecognizable-female-doctor-writing-form-typing-laptop-keyboard_1098-20374.jpg?w=1380&t=st=1690656356~exp=1690656956~hmac=a2817851a3f5f989bdf97658fd834f653014c04326b17aa546ec0accc720e650');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+  
+
+
+h2 {
+  text-align: center;
+  color: #c9d0d8;
+  margin-bottom: 20px;
+}
+
+
+
+.form-group label {
+  color: #f39c12; 
+}
+
+
+
+
+.btn-primary {
+  background-color: #11c823;
+  color: #ca0f0f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #16992e;
+}
+
+.error {
+  color: #db4d4d;
+}
+
+.success {
+  color: #009900;
+}
+
+

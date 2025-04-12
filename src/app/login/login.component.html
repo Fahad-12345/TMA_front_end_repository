@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
+      <h2>Login</h2>
+      <form (ngSubmit)="login()">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control custom-input-box"
+            [(ngModel)]="email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            class="form-control custom-input-box"
+            [(ngModel)]="password"
+            name="password"
+            id="password"
+            required
+          />
+        </div>
+        <!-- <div class="form-group">
+          <label>
+            <input name="checkbox" type="checkbox" [(ngModel)]="keepLoggedIn" />
+            Keep me logged in
+          </label>
+        </div> -->
+        <button type="submit" class="btn btn-primary">Login</button>
+
+        <p *ngIf="loginError" class="error">{{ loginError }}</p>
+        <p *ngIf="loginSuccess" class="success">{{ loginSuccess }}</p>
+      </form>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-lg-6 col-md-8">
+      <hr />
+    </div>
+  </div>
+</div>

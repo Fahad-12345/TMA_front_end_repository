@@ -1,0 +1,21 @@
+<header class="app-header">
+  <nav>
+    <ul>
+      <!-- Add the logo image at the start of the header -->
+      <!-- <li>
+        <a routerLink="/">
+          <img src="assets/LOGO.jfif" alt="Logo" class="logo" />
+        </a>
+      </li> -->
+      <li><a routerLink="/admin-panel">Admin Panel</a></li>
+      <li><a routerLink="/add-flow">Add New Record</a></li>
+      <li><a routerLink="/get-listing">Get Listing</a></li>
+      <!-- <li><a routerLink="/registered-users">Registered Users</a></li> -->
+    </ul>
+  </nav>
+
+  <div class="nav-buttons">
+    <button (click)="goBack()" class="nav-button">Back</button>
+    <button (click)="goForward()" class="nav-button">Forward</button>
+  </div>
+</header>

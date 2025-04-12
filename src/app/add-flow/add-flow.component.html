@@ -1,0 +1,82 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="buttons-container">
+        <button
+          class="btn btn-primary"
+          [ngClass]="{ active: currentStep === 1 }"
+          (click)="currentStep = 1"
+        >
+          Add Course
+        </button>
+
+        <button
+          class="btn btn-primary"
+          [ngClass]="{ active: currentStep === 2 }"
+          (click)="currentStep = 2"
+        >
+          Add Textbook
+        </button>
+
+        <button
+          class="btn btn-primary"
+          [ngClass]="{ active: currentStep === 3 }"
+          (click)="currentStep = 3"
+        >
+          Add Inventory
+        </button>
+      </div>
+
+      <!-- Show AddCaseComponent form when currentStep is 1 -->
+      <ng-container *ngIf="currentStep === 1">
+        <app-add-patient
+          *ngIf="currentStep === 1"
+          (patientSubmitted)="onPatientSubmitted()"
+        ></app-add-patient>
+      </ng-container>
+
+      <!-- Show AddCaseComponent form when currentStep is 2 -->
+      <ng-container *ngIf="currentStep === 2">
+        <app-add-case
+          *ngIf="currentStep === 2"
+          (caseSubmitted)="onCaseSubmitted()"
+        ></app-add-case>
+      </ng-container>
+
+      <!-- Show AddAppointmentComponent form when currentStep is 3 -->
+      <ng-container *ngIf="currentStep === 3">
+        <app-add-appointment
+          *ngIf="currentStep === 3"
+          (appointmentSubmitted)="onAppointmentSubmitted()"
+        ></app-add-appointment>
+      </ng-container>
+
+      <!-- Progress indicator -->
+      <div class="progress-indicator">
+        <div class="step" [ngClass]="{ active: currentStep >= 1 }"></div>
+        <div class="step" [ngClass]="{ active: currentStep >= 2 }"></div>
+        <div class="step" [ngClass]="{ active: currentStep >= 3 }"></div>
+      </div>
+    </div>
+
+    <div
+      class="buttons-container1"
+      style="position: absolute; bottom: 10px; left: 50%"
+    >
+      <button
+        class="btn btn-secondary"
+        (click)="goBack()"
+        [disabled]="currentStep === 1"
+      >
+        Back
+      </button>
+      <button
+        class="btn btn-primary"
+        (click)="continue()"
+        [disabled]="currentStep === 3"
+      >
+        Continue
+      </button>
+    </div>
+  </div>
+</div>

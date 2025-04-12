@@ -1,0 +1,201 @@
+<div class="button-container">
+  <div class="button-section">
+    <button (click)="fetchCourseData()">Edit Course</button>
+    <form class="patient" (submit)="UpdateCourseData()">
+      <div *ngIf="courseData">
+        <div>
+          <label>Course ID:</label>
+          <input
+            type="text"
+            [(ngModel)]="courseData.courseID"
+            name="courseID"
+          />
+        </div>
+        <div>
+          <label>Course Code:</label>
+          <input
+            type="text"
+            [(ngModel)]="courseData.courseCode"
+            name="CourseCode"
+          />
+        </div>
+        <div>
+          <label>Course Name:</label>
+          <input
+            type="text"
+            [(ngModel)]="courseData.courseName"
+            name="courseName"
+          />
+        </div>
+        <div>
+          <label>Semester:</label>
+          <input
+            type="text"
+            [(ngModel)]="courseData.semester"
+            name="semester"
+          />
+        </div>
+        <div>
+          <label>Enrollment Year:</label>
+          <input type="text" [(ngModel)]="courseData.year" name="year" />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <div *ngIf="isPatientDataSubmitted">
+          <div class="success-message" *ngIf="patientDataSuccessMessage">
+            {{ patientDataSuccessMessage }}
+          </div>
+          <div class="error-message" *ngIf="patientDataErrorMessage">
+            {{ patientDataErrorMessage }}
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="button-section">
+    <button (click)="fetchTextbookData()">Edit Textbooks</button>
+    <form class="case" (submit)="UpdatetextbookData()">
+      <div *ngIf="textbookData">
+        <!-- <div>
+          <label for="textbookID">textBook ID:</label>
+          <input
+            type="text"
+            id="textbookID"
+            [(ngModel)]="textbookData.textbookID"
+            name="textbookID"
+          />
+        </div> -->
+
+        <div>
+          <label for="textBooktitle">Assign Book:</label>
+          <input
+            type="text"
+            id="textBooktitle"
+            [(ngModel)]="textbookData.textBooktitle"
+            name="textBooktitle"
+          />
+        </div>
+
+        <div>
+          <label for="availibityStatus">Author :</label>
+          <input
+            type="text"
+            id="author"
+            [(ngModel)]="textbookData.author"
+            name="author"
+          />
+        </div>
+
+        <div>
+          <label for="isbn">Isbn_No:</label>
+          <input
+            type="text"
+            id="isbn"
+            [(ngModel)]="textbookData.ISBN"
+            name="isbn"
+          />
+        </div>
+
+        <div>
+          <label for="edition">Edition:</label>
+          <input
+            type="text"
+            id="edition"
+            [(ngModel)]="textbookData.edition"
+            name="edition"
+          />
+        </div>
+
+        <div>
+          <label for="latest_version">Latest Version:</label>
+          <input
+            type="text"
+            id="latest_version"
+            [(ngModel)]="textbookData.latest_version"
+            name="latest_version"
+          />
+        </div>
+        <div>
+          <label for="old_version">Old Version:</label>
+          <input
+            type="text"
+            id="old_version"
+            [(ngModel)]="textbookData.old_version"
+            name="old_version"
+          />
+        </div>
+        <div>
+          <label for="date_of_publish">Date of Publish:</label>
+          <input
+            type="text"
+            id="date_of_publish"
+            [(ngModel)]="textbookData.date_of_publish"
+            name="date_of_publish"
+          />
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <div *ngIf="isCaseDataSubmitted">
+          <div class="success-message" *ngIf="caseDataSuccessMessage">
+            {{ caseDataSuccessMessage }}
+          </div>
+          <div class="error-message" *ngIf="caseDataErrorMessage">
+            {{ caseDataErrorMessage }}
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="button-section">
+    <button (click)="fetchInventoryData()">Edit Inventories</button>
+    <form class="appointment" (submit)="UpdateInventoryData()">
+      <div *ngIf="InventoryData">
+        <!-- <div>
+          <label for="">Inventory ID:</label>
+          <input
+            type="text"
+            id="inventoryID"
+            [(ngModel)]="InventoryData.InventoryID"
+            name="inventoryID"
+          />
+        </div> -->
+
+        <div>
+          <label for="quantityAvailable"> Quantity Available:</label>
+          <input
+            type="text"
+            id="quantityAvailable"
+            [(ngModel)]="InventoryData.quantityAvailable"
+            name="quantityAvailable"
+          />
+        </div>
+
+        <div>
+          <label for="quantityOnLoan"> Quantity On Loan:</label>
+          <input
+            type="text"
+            id="quantityOnLoan"
+            [(ngModel)]="InventoryData.quantityOnLoan"
+            name="quantityOnLoan"
+          />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <div *ngIf="isAppointmentDataSubmitted">
+          <div class="success-message" *ngIf="appointmentDataSuccessMessage">
+            {{ appointmentDataSuccessMessage }}
+          </div>
+          <div class="error-message" *ngIf="appointmentDataErrorMessage">
+            {{ patientDataErrorMessage }}
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

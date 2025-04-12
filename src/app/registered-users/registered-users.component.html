@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <h3>Registered Users:</h3>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of registeredUsers">
+        <td>{{ user.userID }}</td>
+        <td>{{ user.Email }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

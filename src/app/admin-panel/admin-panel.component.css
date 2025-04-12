@@ -1,0 +1,84 @@
+/* admin.component.css */
+
+/* Set the background image */
+.container-admin {
+  height: 690px;
+  width: 3000px;
+  margin: 0;
+  padding: 0;
+  /* background-image: url('https://img.freepik.com/premium-photo/doctor-hold-icon-health-electronic-medical-record-interface-digital-healthcare-network_34200-712.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container-user {
+  background-image: url('https://img.freepik.com/premium-photo/doctor-hold-icon-health-electronic-medical-record-interface-digital-healthcare-network_34200-712.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-user button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.container-user button:hover {
+  background-color: #0056b3; /* Darker Blue on hover */
+}
+
+.container-user button:active {
+  background-color: #00438f; /* Even darker Blue when clicked */
+}
+
+.container-user button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+  
+  /* Style the buttons */
+  button.btn {
+    margin: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  /* Style the primary button */
+  button.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Style the danger button */
+  button.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* Add hover effect on buttons */
+  button.btn:hover {
+    opacity: 0.8;
+  }
+  
+  
+  /* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  } */
+  

@@ -1,0 +1,40 @@
+<div class="container">
+  <form (submit)="addInventory()">
+    <!-- Add form fields for appointment details -->
+    <label for="textbookID">textbook ID</label>
+    <input
+      type="text"
+      id="textbookID"
+      name="textbookID"
+      [(ngModel)]="inventoryForm.textbookID"
+      required
+    />
+    <br />
+    <label for="quantityAvailable">Quantity Available:</label>
+    <input
+      type="text"
+      id="quantityAvailable"
+      name="quantityAvailable"
+      [(ngModel)]="inventoryForm.quantityAvailable"
+      required
+    />
+    <br />
+    <label for="quantityOnLoan">Quantity On Loan:</label>
+    <input
+      type="number"
+      id="quantityOnLoan"
+      name="quantityOnLoan"
+      [(ngModel)]="inventoryForm.quantityOnLoan"
+      required
+    />
+    <br />
+    <button type="submit">Submit</button>
+  </form>
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>

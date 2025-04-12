@@ -1,0 +1,46 @@
+.app-header {
+  background-color: #56a16e;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-image: url("src\assets\LOGO.jfif");  */
+  background-repeat: no-repeat;
+  background-position: left center; 
+  background-size: contain; 
+}
+  
+
+  /* .logo {
+  height: 60px; 
+  margin-right: 10px; 
+} */
+  
+
+.app-header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .app-header nav ul li {
+    margin-right: 10px;
+  }
+  
+  .app-header nav ul li a {
+    color: #1a0303;
+    text-decoration: none;
+  }
+  
+  .app-header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-buttons {
+    display: flex;
+  }
+  
+  .nav-button {
+    margin-left: 10px;
+  }
+  

@@ -1,0 +1,37 @@
+<!-- register.component.html -->
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
+      <h2>Register</h2>
+      <form (ngSubmit)="register()">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            [(ngModel)]="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            [(ngModel)]="password"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <p *ngIf="registerError" class="error">{{ registerError }}</p>
+        <p *ngIf="registerSuccess" class="success">{{ registerSuccess }}</p>
+      </form>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3"></div>
+</div>

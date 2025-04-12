@@ -1,0 +1,73 @@
+/* Custom styles for the table container */
+.container {
+    height: 690px;
+    width: 2350px;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210316/pngtree-simple-light-blue-shade-background-image_586910.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styles for the table heading */
+  h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Styles for the table itself */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Styles for table header cells */
+  th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Styles for table data cells */
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Zebra stripe for table rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hover effect for table rows */
+  tr:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+  }
+  
+  /* Styles for the entire table on smaller screens */
+  @media screen and (max-width: 768px) {
+    .table {
+      font-size: 14px;
+    }
+    th,
+    td {
+      padding: 8px;
+    }
+  }
+  

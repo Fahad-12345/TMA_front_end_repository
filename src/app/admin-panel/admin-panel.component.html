@@ -1,0 +1,79 @@
+<!-- <div class="container">
+  <button class="btn btn-primary" routerLink="/register">Create User</button>
+  <button class="btn btn-primary" routerLink="/get-listing">Get Listing</button>
+  <button class="btn btn-primary add-patient-button" (click)="addNew()">
+    Add New patient Record
+  </button>
+  <button class="btn btn-danger" (click)="signOut()">Sign Out</button>
+  <button
+    class="btn btn-primary add-patient-button"
+    (click)="checkRegisteredUsers()"
+  >
+    Registered Users
+  </button>
+</div> -->
+
+<!-- Buttons for admin -->
+<div class="container-admin" *ngIf="isAdmin; else restrictedAccess">
+  <button class="btn btn-primary" (click)="goTocreateUser()">
+    Create User
+  </button>
+  <button class="btn btn-primary" (click)="goToGetListing()">
+    Get Listing
+  </button>
+  <button class="btn btn-primary" (click)="addNew()">Add New</button>
+  <button class="btn btn-primary" (click)="checkRegisteredUsers()">
+    Registered Users
+  </button>
+  <button class="btn btn-danger" (click)="signOut()">Sign Out</button>
+</div>
+<!-- buttons for users -->
+<ng-template class="container-user" #restrictedAccess>
+  <button class="btn btn-primary" (click)="goToGetListing()">
+    Get Listing
+  </button>
+  <!-- <button class="btn btn-primary" (click)="checkRegisteredUsers()">
+    Registered Users
+  </button> -->
+  <button class="btn btn-danger" (click)="signOut()">Sign Out</button>
+</ng-template>
+
+<!-- <div class="container" *ngIf="isAdmin; else restrictedAccess">
+  
+  <div class="btn-group">
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Actions
+    </button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" (click)="goTocreateUser()">
+        Create User
+      </button>
+      <button class="dropdown-item" (click)="goToGetListing()">
+        Get Listing
+      </button>
+      <button class="dropdown-item" (click)="addNew()">Add New</button>
+      <button class="dropdown-item" (click)="checkRegisteredUsers()">
+        Registered Users
+      </button>
+      <button class="dropdown-item" (click)="signOut()">Sign Out</button>
+    </div>
+  </div>
+</div>
+
+
+<ng-template class="container" #restrictedAccess>
+  <div class="btn-group">
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Actions
+    </button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" (click)="goToGetListing()">
+        Get Listing
+      </button>
+      <button class="dropdown-item" (click)="checkRegisteredUsers()">
+        Registered Users
+      </button>
+      <button class="dropdown-item" (click)="signOut()">Sign Out</button>
+    </div>
+  </div>
+</ng-template> -->
