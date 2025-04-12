@@ -41,4 +41,3 @@ npm install
 
 # 4. Run the Angular app
 ng serve
-![Screenshot (36)](https://github.com/user-attachments/assets/53f8d31d-2634-4812-9ee0-2ec4615469ff)
